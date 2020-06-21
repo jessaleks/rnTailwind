@@ -1,0 +1,17 @@
+{
+  "name": "rnTailwind",
+  "displayName": "rnTailwind",
+  "expo": {
+    "name": "rnTailwind",
+    "slug": "rnTailwind",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import tailwind from 'tailwind-rn';
 
 const instructions = Platform.select({
   ios: `Press Cmd+R to reload,\nCmd+D or shake for dev menu`,
@@ -9,7 +10,11 @@ const instructions = Platform.select({
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to React Native!</Text>
+      <TouchableOpacity activeOpacity={0.7}>
+        <Text style={tailwind('text-blue-500 p-12 bg-gray-300 rounded-md')}>
+          Welcome to React Native!
+        </Text>
+      </TouchableOpacity>
       <Text style={styles.instructions}>To get started, edit App.js</Text>
       <Text style={styles.instructions}>{instructions}</Text>
     </View>
